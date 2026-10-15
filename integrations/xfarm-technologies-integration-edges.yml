@@ -1,0 +1,71 @@
+edges:
+- partner_name: agrirouter (DKE-Data)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://agrirouter.com/en/solutions/xfarm
+  category: farm data exchange
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: agrirouter Solution Finder (agrirouter.com/en/solutions)
+    spec_file: null
+    standard: agrirouter (ISO 11783-10 TaskData, shape, telemetry)
+    role: agrirouter-ready-solution
+    registered_name: XFarm Technologies Italia S.r.L.
+    website: https://xfarm.ag/en
+    matched_domain: xfarm.ag
+    matched_by: domain
+    solutions:
+    - category: agriculture-software
+      solutions:
+      - xfarm
+      sends:
+      - taskdata-other
+      - taskdata-work-order
+      - taskdata-work-record
+      receives:
+      - taskdata-other
+      - taskdata-work-order
+      - taskdata-work-record
+      - telemetry-full
+      - telemetry-machine-tracking
+    signal_note: 'participation only: solutions are context, one entry per category; never a count'
+    detected_by: sweep-agriculture-food.py
+    detected: '2026-10-15'
+  detected_by: sweep-agriculture-food.py
+  first_seen: '2026-10-15'
+- partner_name: agrirouter (DKE-Data)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://agrirouter.com/en/solutions/xfarm
+  category: farm data exchange
+  channel: standard-directory
+  relationship: compatible
+  shape: isoxml-taskdata
+  evidence_kind: conformance-register
+  degree: declared
+  report_only: true
+  contract_reference:
+    register: agrirouter Solution Finder (agrirouter.com/en/solutions)
+    spec_file: null
+    standard: ISO 11783-10 TaskData (ISOXML)
+    role: isoxml-taskdata-send-and-receive
+    registered_name: XFarm Technologies Italia S.r.L.
+    matched_domain: xfarm.ag
+    detected_by: sweep-agriculture-food.py
+    detected: '2026-10-15'
+  detected_by: sweep-agriculture-food.py
+  first_seen: '2026-10-15'
+generated: '2026-10-15'
+method: searched
+source:
+- https://aggateway.org/AboutUs/Members.aspx
+- https://agrirouter.com/en/solutions
+checked:
+- https://aggateway.org/AboutUs/Members.aspx
+- https://agrirouter.com/en/solutions
+- https://climate.com/en-us/partners.html
